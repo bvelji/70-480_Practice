@@ -1,0 +1,64 @@
+@import 'Color';
+
+$highlightFont: Georgia;
+$dateColor: rgb(230, 230, 230);
+$socialMediaIconHeight: 32px;
+
+@function isRounded($r){
+    @if $r == 'true'{
+        @return 5px;
+    }
+    @else{
+        @return 0px;
+    }
+}
+
+@mixin footerHeight{
+    height: $socialMediaIconHeight*2;
+}
+
+.date{
+    color:$dateColor;
+}
+
+.footer{
+    @include footerHeight;
+}
+.learnMore {
+    @include transparentMainColor(.85);
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-top: 5px;
+    color: $foregroundColor;
+    text-align: center;
+    display: block;
+}
+
+#slogan{
+    @include transparentMainColor(.8);
+    color:$foregroundColor
+}
+
+.panel-heading{
+    border-radius: isRounded('false');
+
+    >a{
+        color: $foregroundColor;
+        border-radius: isRounded('false');
+    }
+}
+.panel-default { 
+    >.panel-heading{
+        @include transparentMainColor(.85);
+        border-width: 2px;
+    }
+    
+}
+.panel-body{
+    font-family:$highlightFont
+}
+
+.table-striped{
+    @include transparentMainColor(.15);
+}

@@ -1,0 +1,37 @@
+/*Used for rgba creating values*/
+.date {
+  color: #e6e6e6; }
+
+.footer {
+  height: 64px; }
+
+.learnMore {
+  background-color: rgba(82, 122, 204, 0.85);
+  padding: 5px;
+  margin-left: 15px;
+  margin-right: 25px;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+  display: block; }
+
+#slogan {
+  background-color: rgba(82, 122, 204, 0.8);
+  color: white; }
+
+.panel-heading {
+  border-radius: 0px; }
+  .panel-heading > a {
+    color: white;
+    border-radius: 0px; }
+
+.panel-default > .panel-heading {
+  background-color: rgba(82, 122, 204, 0.85);
+  border-width: 2px; }
+
+.panel-body {
+  font-family: Georgia; }
+
+.table-striped {
+  background-color: rgba(82, 122, 204, 0.15); }
+

@@ -1,0 +1,12 @@
+
+$mainColor: rgb(82, 122, 204);
+/*Used for rgba creating values*/
+$parialColor: 'rgba(82, 122, 204,';
+$foregroundColor: white;
+
+
+//Apply transparency to background
+@mixin transparentMainColor($alpha){
+    background-color: #{$parialColor} #{$alpha}#{')'};
+
+}

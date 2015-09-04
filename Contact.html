@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <link href="Content/bootstrap.min.css" rel="stylesheet"/>
+  <link href="Content/BDM.css" rel="stylesheet"/>
+  <link href="Content/BigData.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <!--Navbar-->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarcollapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="Home.html">
+                    <img id="icon" src="Media/BigDataIcon.png" alt="BDM Icon"/>
+                </a>
+                <a href="Home.html" class="navbar-brand">Big Data Mornings</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Sponsors.html">Sponsors</a></li>
+                    <li class="dropdown">
+                        <a href="Events.html" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Events.html">Events</a></li>
+                            <li><a href="Events.html#previous">Previous Events</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Navbar-->
+    <!--Header-->
+    <div class="page-header text-center">
+        <h2>Contact Us</h2>
+    </div>
+    <!--Header-->
+    <!--Page Content-->
+	<div class="container-fluid">
+		<div class="row">
+            <!--Sidebar-->
+            <div class="sidebar col-md-3 col-sm-12">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <h4 class="panel-title">
+                                    Top Panel
+                                    <span class="BDM-arrow glyphicon glyphicon-chevron-up" id="arrow1"></span>
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Panel One</p>
+                            </div>
+                        </div><!--Collapse-->
+                    </div><!--Panel-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <h4 class="panel-title">
+                                    Bottom Panel
+                                    <span class="BDM-arrow glyphicon glyphicon-chevron-up" id="arrow2"></span>
+                                </h4>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <p>Panel Two</p>
+                            </div>
+                        </div><!--Collapse-->
+                    </div><!--Panel-->
+                </div><!--Panel Group-->
+            </div>
+            <!--Sidebar-->
+
+
+            <!--Contact Form-->
+            <div class="col-md-5 col-sm-12">
+                <form id="contact-form" class="form-horizontal">
+                    <fieldset>
+                       <!--Name input-->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="nameInput">Name:</label>
+                            <div class="col-md-10">
+                                <input id="nameInput" name="nameInput" type="text" placeholder="" class="form-control input-md"/>
+                            </div>
+                        </div>
+                        <!--Name input-->
+                        <!--Email input-->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="emailInput">Email:</label>
+                            <div class="col-md-10">
+                                <input id="emailInput" name="emailInput" type="text" placeholder="" class="form-control input-md"/>
+                            </div>
+                        </div>
+                        <!--Email input-->
+                        <!--Text input-->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="subjectInput">Subject:</label>
+                            <div class="col-md-10">
+                                <input id="subjectInput" name="subjectInput" type="text" placeholder="" class="form-control input-md"/>
+                            </div>
+                        </div>
+                        <!--Text input-->
+                        <!--Textarea-->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="messageInput">Message:</label>
+                            <div class="col-md-10">
+                                <textarea class="form-control" id="messageInput" name="messageInput" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <!--Textarea-->
+                        <!--Button-->
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="sendButton"></label>
+                            <div class="col-md-10">
+                                <button type="button" id="sendButton" name="sendButton" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                        <!--Button-->
+                    </fieldset>
+                </form>
+                <br />
+                <br />
+            </div>
+            <!--Contact Form-->
+			<!--Contact Info-->
+			<div id="address" class="col-md-4 col-sm-12 ">
+                <div class="text-center">
+                    <address>
+                        123 Peachtree St.<br>
+                        Atlanta, GA 30303<br>
+                        <abbr title="Phone">P:</abbr> (404) 867-5309<br>
+                    </address>
+                    <strong>Planning:</strong> <a href="mailto:#">Plans@emailUs.com</a><br>
+                    <strong>Sponsoring:</strong><a href="mailto:#"> Sponsors@emailUs.com</a><br>
+                </div>
+			</div>
+            <!--Contact Info-->
+		</div>
+    </div>
+    <!--Page Content-->
+    <!--Confirmation Modal-->
+    <div id="confirmation-modal" class="modal fade" role="dialog" tabindex="-1" aria-hidden="true" aria-label="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title">Send your message?</h3>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to send your message?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="send" type="submit" class="btn btn-success">Yes, send my message.</button>
+                    <button id="do-not-send" type="button" class="btn btn-danger" data-dismiss="modal">Wait, don't send it yet.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Confirmation Modal-->
+    <!--Footer-->
+    <div class="footer panel panel-default">
+        <div class="panel-body">
+            <div id="social-media">
+                <a href="#">
+                    <img src="Media/sharethis_32.png" alt="Share"/>
+                </a>
+                <a href="#">
+                    <img src="Media/facebook_32.png" alt="Facebook"/>
+                    </a>
+                    <a href="#">
+                    <img src="Media/linkedin_32.png" alt="LinkedIn"/>
+                </a>
+                <a href="#">
+                    <img src="Media/twitter_32.png" alt="Twitter"/>
+                </a>
+                <a href="#">
+                    <img src="Media/email_32.png" alt="Email"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <!--Load scripts-->
+    <script src="JS/jquery-1.9.1.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/BDM.js"></script>
+</body>
+</html>
