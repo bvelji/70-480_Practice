@@ -2,7 +2,6 @@
 GEOLOCATION
 */
 
-
 function get_location(){
   var x = $('#geolocation');
   if(navigator.geolocation){
@@ -23,4 +22,10 @@ function geoError(err){
   var x = $('#geolocation');
   x.append("<p>Error Code: " + err.code + "</p>");
   x.append("<p>Error Message: " + err.message + "</p>");
+}
+
+function insertMap(position){
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+  var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=14&size=400x300&sensor=false";
+  $('#map').append("<img src='"+img_url+"'>").toggleClass("outline");
 }
