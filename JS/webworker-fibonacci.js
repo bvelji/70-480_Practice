@@ -5,19 +5,19 @@ function createNewAgrs(message, result){
 }
 
 function messageHandler(e){
-  if(e.data.Command === "start"){
-    fibonacciSeries(e.data.Value);
+  switch(e.data.Command){
+    case "start":
+      fibonacciSeries(e.data.Value);
+      break;
+    case "close":
+      this.close();
+      var args = createNewAgrs("Closing worker thread");
+      postMessage(args);
+      break;
+    default:
+      var args = createNewAgrs("Command: " + e.data.Command + " was not found.");
+      postMessage(args);
   }
-  else if (e.data.Command === "close"){
-    this.close();
-    var args = createNewAgrs("Closing worker thread");
-    postMessage(args);
-  }
-  else{
-    var args = createNewAgrs("Command: " + e.data.Command + " was not found.");
-    postMessage(args);
-  }
-
 }
 
 function fibonacciSeries(n){
