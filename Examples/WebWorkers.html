@@ -27,27 +27,21 @@
   </div>
   <!--Navbar-->
 
-  <div class="progress">
-  <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-    <span class="sr-only">45% Complete</span>
-  </div>
-</div>
-
-  <div id=containerbubbles>
-    <div id="bubble1">1
-      <div id="bubble2">2
-        <div id="bubble3">3
-        </div>
-      </div>
+  <h1>Fibonacci Sequence</h1>
+  <section>
+    <h2>WebWorkers</h2>
+    <p>Slight pause at 35, noticeable delay at 40. Note the animation.</p>
+    <p>Note: To use web workers in chrome, start chrome with --allow-file-access-from-files flag</p>
+    <input type="numeric" id="seriesLength" value="35" />
+    <input type="button" id="generateButton" value="Generate Series without Web Workers" />
+    <input type="button" id="generateWithWWButton" value="Generate Series using Web Workers" />
+    <input type="button" id="resetButton" value="Reset"/>
+  </section>
+  <div class="progress" style="width:50px">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
     </div>
   </div>
-
-  <div class="well well-sm">
-    <input type="radio" name="capture" value="bubbleOnly"> Bubble Events
-    <input type="radio" name="capture" value="captureOnly"> Capture Events
-    <input type="radio" name="capture" value="captureAndBubble"> Capture and Bubble Events
-    <button type="button" id="addEventsButton">Add Event Handlers</input>
-  </div>
+  <ol id="log"></ol>
 
   <!--Load scripts-->
   <script src="../JS/jquery-1.9.1.js"></script>
