@@ -15,6 +15,7 @@ function showPosition(position){
   var x = $('#geolocation');
   x.append("<p>Latitude: " + position.coords.latitude + "</p>");
   x.append("<p>Longitude: " + position.coords.longitude + "</p>");
+  insertMap(position);
 };
 
 function geoError(err){
