@@ -1,9 +1,23 @@
 var results = [];
 
+function createNewAgrs(message, result){
+  return {Message: message, Result: result};
+}
+
 function messageHandler(e){
-  if(e.data > 0){
-    fibonacciSeries(e.data);
+  if(e.data.Command === "start"){
+    fibonacciSeries(e.data.Value);
   }
+  else if (e.data.Command === "close"){
+    this.close();
+    var args = createNewAgrs("Closing worker thread");
+    postMessage(args);
+  }
+  else{
+    var args = createNewAgrs("Command: " + e.data.Command + " was not found.");
+    postMessage(args);
+  }
+
 }
 
 function fibonacciSeries(n){
