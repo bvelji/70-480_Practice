@@ -26,13 +26,20 @@
       </div>
   </div>
   <!--Navbar-->
-  <div id=bubbles>
+  <div id=containerbubbles>
     <div id="bubble1">1
       <div id="bubble2">2
         <div id="bubble3">3
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="well well-sm">
+    <input type="radio" name="capture" value="bubbleOnly"> Bubble Events
+    <input type="radio" name="capture" value="captureOnly"> Capture Events
+    <input type="radio" name="capture" value="captureAndBubble"> Capture and Bubble Events
+    <button type="button" id="addEventsButton">Add Event Handlers</input>
   </div>
 
   <!--Load scripts-->
