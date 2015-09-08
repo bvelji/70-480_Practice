@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Study Pages</title>
+  <link href="../CSS/index.css" rel="stylesheet">
+  <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!--Navbar-->
+  <div class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarcollapse">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarcollapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">Index</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!--Navbar-->
+  <p>The following demo does not work if serving file from the disk.</p>
+  <p>Instead use the following <a href="http://jsbin.com/xonule">JSBin</a>
+  <section id="geolocation">
+    <button onclick="get_location()">Get Location</button>
+  </section>
+  <section id="map">
+  </section>
+
+  <!--Load scripts-->
+  <script src="../JS/jquery-1.9.1.js"></script>
+  <script src="../JS/bootstrap.js"></script>
+  <script src="../JS/index.js"></script>
+  <script src="../JS/geolocation.js"></script>
+</body>
+</html>

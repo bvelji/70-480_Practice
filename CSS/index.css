@@ -1,3 +1,31 @@
 .outline{
   border: 2px solid black;
 }
+.highlight{
+  background-color: yellow;
+  color:black;
+}
+
+#bubble1{
+  padding:12px;
+  background-color: blue;
+  color: white;
+}
+
+#bubble2{
+  padding: inherit;
+  background-color: red;
+  color:inherit;
+}
+
+#bubble3{
+  padding: inherit;
+  background-color: green;
+  color:inherit;
+}
+
+#containerbubbles{
+  width:500px;
+  max-height:500px;
+  padding:20px;
+}
