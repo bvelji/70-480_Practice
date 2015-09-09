@@ -1,0 +1,7 @@
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Debug\WebSocketServer.exe.config
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Debug\WebSocketServer.exe
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Debug\WebSocketServer.pdb
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Debug\Fleck.dll
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\obj\Debug\WebSocketServer.csprojResolveAssemblyReference.cache
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\obj\Debug\WebSocketServer.exe
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\obj\Debug\WebSocketServer.pdb

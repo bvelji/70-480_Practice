@@ -1,0 +1,6 @@
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Release\WebSocketServer.exe.config
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Release\WebSocketServer.exe
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Release\WebSocketServer.pdb
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\bin\Release\Fleck.dll
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\obj\Release\WebSocketServer.exe
+C:\Users\bvelji\Desktop\70-480_Practice\WebSocketServer\WebSocketServer\obj\Release\WebSocketServer.pdb
