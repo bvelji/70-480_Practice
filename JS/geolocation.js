@@ -7,16 +7,16 @@ function get_location(){
   if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(showPosition, geoError);
   } else {
-    x.append("<p>Your browser does not support geolocation</p>")
+    x.append("<p>Your browser does not support geolocation</p>");
   }
-};
+}
 
 function showPosition(position){
   var x = $('#geolocation');
   x.append("<p>Latitude: " + position.coords.latitude + "</p>");
   x.append("<p>Longitude: " + position.coords.longitude + "</p>");
   insertMap(position);
-};
+}
 
 function geoError(err){
   console.log('Error: ' + err.code + '  MSG: ' + err.message);

@@ -11,7 +11,7 @@ $(function(){
   }
 
   function highlight(obj){
-    if($(obj).css("background-color") == "rgb(255, 255, 0)"){
+    if($(obj).css("background-color") === "rgb(255, 255, 0)"){
       $(obj).css("background-color", "");
       $(obj).toggleClass("outline");
     }else{

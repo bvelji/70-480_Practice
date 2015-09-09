@@ -28,7 +28,7 @@ $(function(){
   //Closes the worker thread AFTER current processing is completed.
   //Allows for final message to be sent back to UI thread.
   $("#closeButton").click(function(){
-    var agrs = createNewAgrs("close");
+    var args = createNewAgrs("close");
     getWorker().postMessage(args);
   });
 
@@ -45,13 +45,13 @@ $(function(){
   }
 
   function getWorker(){
-    if(_worker == null){
+    if(_worker === null){
       _worker = new Worker("../JS/webworker-fibonacci.js");
       _worker.onmessage = messageHandler;
       _worker.onerror = errorHandler;
     }
     return _worker;
-  };
+  }
 
   function messageHandler(e){
     if(e.data.length){
@@ -76,7 +76,7 @@ $(function(){
     else{
       return fibonacci(n - 1) + fibonacci(n - 2);
     }
-  };
+  }
 
   function logMsg(msg){
     $("#messages").append("<p>" + msg + "</p>");

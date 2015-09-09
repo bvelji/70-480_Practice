@@ -14,11 +14,11 @@
     //Show modal to confirm sending message
     $('#sendButton').click(function (e) {
         $('#confirmation-modal').modal('toggle');
-    })
+    });
     //Remove modal and if sent, clear form
     $('#send').click(function (e) {
         /*
-            message sending code here 
+            message sending code here
         */
         $('#confirmation-modal').modal('toggle');
         $('#contact-form :input').val("");
@@ -26,4 +26,4 @@
 
 
 
-})
+});
