@@ -1,35 +1,36 @@
-body{
+body {
   padding-left: 5px;
 }
-
-.outline{
+.outline {
   border: 2px solid black;
 }
-.highlight{
+.highlight {
   background-color: yellow;
-  color:black;
+  color: black;
 }
-
-#bubble1{
-  padding:12px;
+.incomplete {
+  background-color: red;
+}
+.inprogress{
+  background-color: lightyellow;
+}
+#bubble1 {
+  padding: 12px;
   background-color: blue;
   color: white;
 }
-
-#bubble2{
+#bubble2 {
   padding: inherit;
   background-color: red;
-  color:inherit;
+  color: inherit;
 }
-
-#bubble3{
+#bubble3 {
   padding: inherit;
   background-color: green;
-  color:inherit;
+  color: inherit;
 }
-
-#containerbubbles{
-  width:500px;
-  max-height:500px;
-  padding:20px;
+#containerbubbles {
+  width: 500px;
+  max-height: 500px;
+  padding: 20px;
 }
