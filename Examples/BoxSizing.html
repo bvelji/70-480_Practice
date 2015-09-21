@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Study Pages</title>
+  <link href="../CSS/index.css" rel="stylesheet">
+  <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link href="../CSS/flexbox.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+  <!--Navbar-->
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarcollapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="../index.html">Index</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Navbar-->
+
+  <div class="container">
+    <h1>Content Sizing</h1>
+    <p>Default behavior when box-sizing is not specified or when set to content-box.
+      (Specified in CSS here because Bootstrap overwrites everything with border-box.)
+      Width and Height settings apply to content only. Padding and Border are added to this box.
+    </p>
+    <p>Left box has content width of 200 px.</p>
+    <p>Right box has content width of 200 px.</p>
+    <div class="contentSizing">width:200px; height:200px; border: 5px solid black;
+      margin:10px; float:left; border-box:content-box
+    </div>
+    <div class="contentSizing paddedbox">width:200px; height:200px; border: 5px solid black;
+       margin:10px; float:left; box-sizing:content-box; padding:10px;
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Border Box Sizing</h1>
+    <p>Height and width represent content, border, and padding.</p>
+    <p>Left box has content width of 190px.</p>
+    <p>Right box has content width of 170 px.</p>
+    <div class="boxSizing">width:200px; height:200px; border: 5px solid black; margin:10px; box-sizing:border-box</div>
+    <div class="boxSizing paddedbox">width:200px; height:200px; border: 5px solid black; margin:10px; float:left; box-sizing: border-box; padding:10px;</div>
+  </div>
+
+  <div class="container partialSupport">
+    <h1>Padding Box Sizing</h1>
+    <p><strong>Only supported in Firefox.</strong>
+      Height and width represent content and padding.
+      Border is added to this box.
+    </p>
+    <p>Left box has content width of 190px.</p>
+    <p>Right box has content width of 170 px.</p>
+    <div class="paddedboxSizing">width:200px; height:200px; border: 5px solid black; margin:10px; box-sizing:border-box</div>
+    <div class="paddedboxSizing paddedbox">width:200px; height:200px; border: 5px solid black; margin:10px; float:left; box-sizing: border-box; padding:10px;</div>
+  </div>
+
+
+
+  <!--Load scripts-->
+  <script src="../JS/jquery-1.9.1.js"></script>
+  <script src="../JS/bootstrap.js"></script>
+  <script src="../JS/index.js"></script>
+  <!-- <script src="../JS/form.js"></script> -->
+</body>
+
+</html>

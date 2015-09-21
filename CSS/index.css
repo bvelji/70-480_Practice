@@ -14,6 +14,36 @@ body {
 .inprogress{
   background-color: lightyellow;
 }
+.contentSizing{
+  width:200px;
+  height:200px;
+  border: 5px solid black;
+  margin:10px;
+  float:left;
+  box-sizing: content-box;
+}
+.boxSizing{
+  width:200px;
+  height:200px;
+  border: 5px solid black;
+  margin:10px;
+  float:left;
+  box-sizing: border-box;
+}
+.paddedbox{
+  padding:10px;
+}
+.paddedboxSizing{
+  width:200px;
+  height:200px;
+  border: 5px solid black;
+  margin:10px;
+  float:left;
+  box-sizing: padding-box;
+}
+.partialSupport{
+  background-color: rgba(10,10,10,.5);
+}
 #bubble1 {
   padding: 12px;
   background-color: blue;
