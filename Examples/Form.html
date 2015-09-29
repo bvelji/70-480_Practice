@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Study Pages</title>
-  <link href="../CSS/index.css" rel="stylesheet">
   <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
-  <link href="../CSS/flexbox.css" rel="stylesheet" />
+  <link href="../CSS/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,17 +31,42 @@
 
   <div id="container" class="well">
     <form>
-      <h2>Input form</h2>
-      <div class="form-group">
-        <label for="name">Name: </label>
-        <input type="text" name="name" id="name" />
+      <div class="row">
+        <h2>Input form</h2>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="name">Name</label>
+          <div class="col-md-2">
+            <input type="text" name="name" id="name" class="form-control input-md" />
+          </div>
+        </div>
       </div>
 
-      <div class="form-group">
-        <input type="submit" id="submit" />
-        <input type="reset" value="Reset" id="resetForm" />
+      <div class="row">
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="requiredInput">Required</label>
+          <div class="col-md-2">
+            <input type="text" id="requiredInput" name="requiredInput" class="form-control input-md" required="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="caPostalCode">Canadian Postal Code</label>
+          <div class="col-md-2">
+            <input type="text" id="caPostalCode" name="caPostalCode" class="form-control input-md" pattern="[A-Za-z]\d[A-Za-z][\s]?\d[A-Za-z]\d" required />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <input type="submit" id="submit" />
+          <input type="reset" value="Reset" id="resetForm" />
+        </div>
       </div>
     </form>
+
   </div>
 
   <div id="controls" class="well">

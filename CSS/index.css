@@ -1,6 +1,10 @@
 body {
   padding-left: 5px;
 }
+label{
+  text-align:right;
+  padding-right: 5px;
+}
 .outline {
   border: 2px solid black;
 }
@@ -63,4 +67,26 @@ body {
   width: 500px;
   max-height: 500px;
   padding: 20px;
+}
+input:required, input:invalid{
+  border:1px solid red;
+  background-color: rgba(100,0,0,.2);
+}
+input:invalid{
+  background-image: url('../Media/thumbs_down.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 25px 25px;
+}
+input:valid:not([type="submit"]){
+  border: 1px solid green;
+  background-color: rgba(0,100,0,.2);
+  background-image: url('../Media/thumbs_up.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 25px 25px;
+}
+form:valid, form:invalid{
+  border:none;
+  background-color: inherit;
 }
