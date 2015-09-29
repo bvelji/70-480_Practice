@@ -1,0 +1,18 @@
+#ani1 {
+  width: 100px;
+  height: 100px;
+  animation: frames 4s linear infinite alternate;
+}
+@keyframes frames {
+  from {
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+    width: 200px;
+  }
+  to {
+    background-color: red;
+    width: 1000px;
+  }
+}
