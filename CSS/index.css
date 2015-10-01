@@ -48,6 +48,9 @@ label{
 .partialSupport{
   background-color: rgba(10,10,10,.5);
 }
+.narrow{
+  width:33%;
+}
 #bubble1 {
   padding: 12px;
   background-color: blue;
