@@ -1,8 +1,8 @@
 body {
   padding-left: 5px;
 }
-label{
-  text-align:right;
+label {
+  text-align: right;
   padding-right: 5px;
 }
 .outline {
@@ -15,61 +15,61 @@ label{
 .incomplete {
   background-color: red;
 }
-.inprogress{
+.inprogress {
   background-color: lightyellow;
 }
-.contentSizing{
-  width:200px;
-  height:200px;
+.contentSizing {
+  width: 200px;
+  height: 200px;
   border: 5px solid black;
-  margin:10px;
-  float:left;
+  margin: 10px;
+  float: left;
   box-sizing: content-box;
 }
-.boxSizing{
-  width:200px;
-  height:200px;
+.boxSizing {
+  width: 200px;
+  height: 200px;
   border: 5px solid black;
-  margin:10px;
-  float:left;
+  margin: 10px;
+  float: left;
   box-sizing: border-box;
 }
-.paddedbox{
-  padding:10px;
+.paddedbox {
+  padding: 10px;
 }
-.paddedboxSizing{
-  width:200px;
-  height:200px;
+.paddedboxSizing {
+  width: 200px;
+  height: 200px;
   border: 5px solid black;
-  margin:10px;
-  float:left;
+  margin: 10px;
+  float: left;
   box-sizing: padding-box;
 }
-.partialSupport{
-  background-color: rgba(10,10,10,.5);
+.partialSupport {
+  background-color: rgba(10, 10, 10, .5);
 }
-.narrow{
-  width:33%;
+.narrow {
+  width: 33%;
 }
-[draggable="true"]{
-  user-select:none;
+[draggable="true"] {
+  user-select: none;
 }
-.draggable{
-  width:50px;
-  height:50px;
+.draggable {
+  width: 50px;
+  height: 50px;
   background-color: orange;
-  margin:15px;
+  margin: 15px;
   display: inline-block;
 }
-.dragging{
+.dragging {
   opacity: 50%;
   border: 1px solid red;
 }
-.droptarget{
+.droptarget {
   border: 3px dashed black;
 }
-.droppable{
-  background-color: rgba(255,255,0,.5);
+.droppable {
+  background-color: rgba(255, 255, 0, .5);
   border-color: lightblue;
 }
 #bubble1 {
@@ -92,25 +92,25 @@ label{
   max-height: 500px;
   padding: 20px;
 }
-input:required, input:invalid{
-  border:1px solid red;
-  background-color: rgba(100,0,0,.2);
+input:required, input:invalid {
+  border: 1px solid red;
+  background-color: rgba(100, 0, 0, .2);
 }
-input:invalid{
+input:invalid {
   background-image: url('../Media/thumbs_down.png');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 25px 25px;
 }
-input:valid:not([type="submit"]){
+input:valid:not([type="submit"]) {
   border: 1px solid green;
-  background-color: rgba(0,100,0,.2);
+  background-color: rgba(0, 100, 0, .2);
   background-image: url('../Media/thumbs_up.png');
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 25px 25px;
 }
-form:valid, form:invalid{
-  border:none;
+form:valid, form:invalid {
+  border: none;
   background-color: inherit;
 }
