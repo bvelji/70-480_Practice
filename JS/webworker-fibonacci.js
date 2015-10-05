@@ -5,17 +5,18 @@ function createNewAgrs(message, result){
 }
 
 function messageHandler(e){
+  var args;
   switch(e.data.Command){
     case "start":
       fibonacciSeries(e.data.Value);
       break;
     case "close":
       this.close();
-      var args = createNewAgrs("Closing worker thread");
+      args = createNewAgrs("Closing worker thread");
       postMessage(args);
       break;
     default:
-      var args = createNewAgrs("Command: " + e.data.Command + " was not found.");
+      args = createNewAgrs("Command: " + e.data.Command + " was not found.");
       postMessage(args);
   }
 }
