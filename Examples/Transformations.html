@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Study Pages</title>
+  <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+  <link href="../CSS/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navbar-->
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarcollapse">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Index</a></li>
+          <li><a href="Home.html">Bootstrap Class Project</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--Navbar-->
+
+  <h1>3D Transformations</h1>
+
+  <div class="container" id="transformHolder">
+    <div id="trans1" class="transformable">Transform 1.</div>
+    <div id="trans2" class="transformable">Transform 2.</div>
+    <div id="trans3" class="transformable">Transform 3.</div>
+    <div id="trans4" class="transformable">Transform 4.</div>
+  </div>
+
+  <div class="well">
+    <form>
+      <div class="form-group">
+        <label for="deg1">Degrees 1</label>
+        <input id="deg1" type="number" name="deg1" placeholder="degrees">
+      </div>
+      <div class="form-group">
+        <label for="deg2">Degrees 2</label>
+        <input id="deg2" type="number" name="deg2" placeholder="degrees">
+      </div>
+      <div class="form-group">
+        <label for="deg3">Degrees 3</label>
+        <input id="deg3" type="number" name="deg3" placeholder="degrees">
+      </div>
+
+    </form>
+    <button id="rotate1">Transform 1 rotate(Degrees 1)</button>
+    <button id="rotate2">Transform 2 rotateX(Degrees 1)</button>
+    <button id="rotate3">Transform 3 rotateY(Degrees 1)</button>
+    <button id="rotate4">Transform 4 rotateZ(Degrees 1)</button>
+    <button id="reset">Reset</button>
+    <br/>
+    <button id="translate1">Translate 1 translateX(Degrees 1 px)</button>
+    <button id="translate2">Translate 2 translateY(Degrees 1 px)</button>
+    <button id="translate3">Translate 3 translateZ(Degrees 1 px)</button>
+    <button id="translate4">Translate 4 translate3d(Degrees 1 px, Degrees 2 px, Degrees 3 px)</button>
+
+  </div>
+
+
+  <!--Load scripts-->
+  <script src="../JS/jquery-1.9.1.min.js"></script>
+  <script src="../JS/bootstrap.js"></script>
+  <script src="../JS/index.js"></script>
+  <script src="../JS/transformations.js"></script>
+</body>
+
+</html>
