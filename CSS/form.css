@@ -1,0 +1,18 @@
+input:required, input:invalid {
+  border: 1px solid red;
+  background-color: rgba(100, 0, 0, .2);
+}
+input:invalid {
+  background-image: url('../Media/thumbs_down.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 25px 25px;
+}
+input:valid {
+  border: 1px solid green;
+  background-color: rgba(0, 100, 0, .2);
+  background-image: url('../Media/thumbs_up.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 25px 25px;
+}
